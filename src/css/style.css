@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    height: 1700px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+#container{
+    height: 100%;
+    width: 900px;
+    box-shadow: 10px 10px 30px #0c0c0c8e;
+    display: grid;
+    grid-template-columns: 400px 500px;
+    font-family: 'Poppins', sans-serif;
+}
+.lateral-esquerda{
+    background: #0d2337;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.photo{
+    background: red;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-profile{
+    background:#22566b ;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem{
+    height: 310px;
+    width: 310px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+
+}
+.sobre-mim{
+    background: rgb(0, 110, 255);
+    height: 425px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nome{
+    padding-top: 10px;
+    font-size: 2.4em;
+    font-weight: 800;
+}
+.profissao{
+    font-size: 1.1em;
+    text-align: center;
+}
+.quem-sou{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9em;
+}
+.contato{
+    background: rgb(255, 0, 170);
+    height: 490px;
+    width: 400px;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contato h2{
+    border: 1px solid red;
+    width: 350px;
+    text-align: center;
+    border-bottom:2px solid #22566b ;
+    font-size: 2em;
+}
+#lista-contato{
+    border: 1px solid red;
+    width: 350px;
+    padding: 20px;
+    font-size: 15px;
+}
+#lista-contato li{
+    padding: 10px 0px;
+    list-style: none;
+}
+#lista-contato img{
+   position: relative;
+   top: 8px;
+   right: 10px;
+   
+}
+.indentacao{
+    margin-left: 24px;
+}
+.idiomas{
+    background: rgb(0, 255, 149);
+    height: 425px;
+}
+
+.lateral-direita{
+    background: #fff;
+}
