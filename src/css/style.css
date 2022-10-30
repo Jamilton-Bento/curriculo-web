@@ -10,14 +10,16 @@ body{
     display: flex;
     justify-content: center;
     margin: 20px 0px;
+   
 }
 #container{
     height: 100%;
     width: 900px;
     box-shadow: 10px 10px 30px #0c0c0c8e;
     display: grid;
-    grid-template-columns: 400px 500px;
+    grid-template-columns: 400px 50px 450px;
     font-family: 'Poppins', sans-serif;
+    
 }
 .lateral-esquerda{
     background: #0d2337;
@@ -28,8 +30,8 @@ body{
    
 }
 .photo{
-    background: red;
     height: 360px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,16 +46,17 @@ body{
     align-items: center;
 }
 .imagem{
+    background: url(../img/photo-profile.jpg) no-repeat;
     height: 310px;
     width: 310px;
-    border: 10px solid #fff;
+    border: 10px solid #0d2337;
     border-radius: 50%;
 
 }
 .sobre-mim{
-    background: rgb(0, 110, 255);
     height: 425px;
     padding: 0 20px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,46 +76,181 @@ body{
     font-size: 0.9em;
 }
 .contato{
-    background: rgb(255, 0, 170);
     height: 490px;
     width: 400px;
     display: flex;
-    
     align-items: center;
     flex-direction: column;
+
     
 }
-.contato h2{
-    border: 1px solid red;
-    width: 350px;
-    text-align: center;
-    border-bottom:2px solid #22566b ;
-    font-size: 2em;
+.contato h2, .projetos h2{
+    text-transform: uppercase;
 }
-#lista-contato{
-    border: 1px solid red;
-    width: 350px;
-    padding: 20px;
-    font-size: 15px;
+.contato hr, .projetos hr{
+   background:#22566b ;
+   height: 4px;
+   width: 180px;
+   border:none;
+   border-radius: 50px;
 }
-#lista-contato li{
+/*Caixas da lateral esquerda*/
+.lateral-esquerda ul{
+    width: 350px;
+    padding: 50px 0px 0px 8px;
+    font-size: 1em;
+}
+
+.lateral-esquerda ul li {
     padding: 10px 0px;
     list-style: none;
+    text-align: justify;
 }
+.lateral-esquerda ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+/*Até aqui*/
 #lista-contato img{
    position: relative;
    top: 8px;
-   right: 10px;
+   right: 15px;
    
 }
 .indentacao{
     margin-left: 24px;
 }
-.idiomas{
-    background: rgb(0, 255, 149);
+.projetos{
     height: 425px;
+     width: 400px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.projetos ul{
+    margin-top: 1px;
+}
+.projetos ul.meus-projetos li {
+    text-align: left;
+    margin-left: 8px;
+    margin-bottom: 10px
+}
+.veja-mais span a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.veja-mais:hover{
+    
+    border-bottom: 4px solid #fff;
+  
 }
 
+/* area do meio*/
+.meio{
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.caixa-meio{
+    background-color:#075473;
+    height: 300px;
+    width: 90%;
+     border-radius: 0px 30px 30px 0px;
+}
+.caixa-meio:hover{
+    width: 450px;
+    z-index: 22;    
+}
+.meio h3{
+    margin-left: 8px;
+    color: #fff;
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 4px;
+    
+  text-align: center;
+ 
+  height: 100%;
+  width: 100%;
+
+  
+ 
+}
+.meio h3:hover{
+    margin-left: 8px;
+    color: #fff;
+    writing-mode:horizontal-tb;
+    transform: rotate(-0);
+    letter-spacing: 4px;
+    text-align: center;
+    height: 300px;
+    width: 450px;
+    padding-top: 30px;
+    font-size: 20px;
+  
+ 
+}
 .lateral-direita{
-    background: #fff;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caixa-direita{
+ 
+    color: #22566b;
+    margin: 0px 20px;
+    height: 340px;
+    
+}
+.caixa-direita h2{
+    text-indent: -9000px;
+}
+
+.lateral-direita h3{
+    font-size: 1.2em;
+}
+.topo{
+   padding-top: 15px;
+}
+.dados-habilidades .barra100{
+    height: 15px;
+    width: 300px;
+    background:#d7e1db;
+  
+}
+.dados-habilidades .barra70{
+    height: 15px;
+    width: 210px;
+    background:#22566b;
+}
+
+.dados-habilidades .barra50{
+    height: 15px;
+    width: 150px;
+    background:#22566b;
+}
+.dados-habilidades .barra30{
+    height: 15px;
+    width: 90px;
+    background:#22566b;
+}
+.progresso{
+    display: flex;
+    width: 350px;
+    height: 40px;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
 }
